@@ -26,8 +26,8 @@ import math
 
 
 #task 3
-float_value = 36.56861258
-current_hruvnya_rate = float_value
-dollar = float(input("Enter quantity of dollar: "))
-Exchange = current_hruvnya_rate * dollar
-print(round(Exchange, 2))
+#float_value = 36.56861258
+#current_hruvnya_rate = float_value
+#dollar = float(input("Enter quantity of dollar: "))
+#Exchange = current_hruvnya_rate * dollar
+#print(round(Exchange, 2))
