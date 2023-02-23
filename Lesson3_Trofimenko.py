@@ -16,17 +16,30 @@ import random
 
 
 # task 2
-while True:
-    birth_month = int(input ("Enter your birthday month: "))
-    if birth_month == 1 or birth_month == 2 or birth_month == 12:
-        print("За вікном падав сніг")
-    elif birth_month == 3 or birth_month == 4 or birth_month == 5:
-        print("Все довкола розцвітало")
-    elif birth_month == 6 or birth_month == 7 or birth_month == 8:
-        print("Діти насолоджувались літніми канікулами")
-    elif birth_month == 9 or birth_month == 10 or birth_month == 11:
-        print("Все довкола загоралось яскравими фарбами")
-    else:
-        print("Введено некорректні дані. Будь ласка, введіть номер місяця вашого народження")
+#while True:
+#    birth_month = int(input ("Enter your birthday month: "))
+#    if birth_month == 1 or birth_month == 2 or birth_month == 12:
+#        print("За вікном падав сніг")
+#    elif birth_month == 3 or birth_month == 4 or birth_month == 5:
+#        print("Все довкола розцвітало")
+#   elif birth_month == 6 or birth_month == 7 or birth_month == 8:
+#        print("Діти насолоджувались літніми канікулами")
+#    elif birth_month == 9 or birth_month == 10 or birth_month == 11:
+#        print("Все довкола загоралось яскравими фарбами")
+#    else:
+#        print("Введено некорректні дані. Будь ласка, введіть номер місяця вашого народження")
 
 
+# task 3
+number = int(random.randrange(1000000))
+print(number)
+sum_number = 0
+while number > 0:
+    digit = number % 10
+    if digit != 0:
+        sum_number += digit
+    number = number // 10
+if number % 2 == 0 and sum_number % 3 == 0:
+    print("Обране число ділиться на 6")
+else:
+    print("Обране число не ділиться на 6")
