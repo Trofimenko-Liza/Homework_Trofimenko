@@ -3,31 +3,31 @@ import random
 
 
 # task 1
-#minute = int(random.randint(0, 59))
-#print(minute)
-#if minute >= 0 and minute < 15:
-#    print("It is first quarter of an hour")
-#elif minute >= 15 and minute < 30:
-#    print("It is second quarter of an hour")
-#elif minute >= 30 and minute < 45:
-#    print("It is third quarter of an hour")
-#elif minute >=45 and minute < 60:
-#    print("It is fourth quarter of an hour")
+minute = int(random.randint(0, 59))
+print(minute)
+if minute >= 0 and minute < 15:
+    print("It is first quarter of an hour")
+elif minute >= 15 and minute < 30:
+    print("It is second quarter of an hour")
+elif minute >= 30 and minute < 45:
+    print("It is third quarter of an hour")
+elif minute >=45 and minute < 60:
+    print("It is fourth quarter of an hour")
 
 
 # task 2
 #while True:
-#    birth_month = int(input ("Enter your birthday month: "))
-#    if birth_month == 1 or birth_month == 2 or birth_month == 12:
-#        print("За вікном падав сніг")
-#    elif birth_month == 3 or birth_month == 4 or birth_month == 5:
-#        print("Все довкола розцвітало")
-#   elif birth_month == 6 or birth_month == 7 or birth_month == 8:
-#        print("Діти насолоджувались літніми канікулами")
-#    elif birth_month == 9 or birth_month == 10 or birth_month == 11:
-#        print("Все довкола загоралось яскравими фарбами")
-#    else:
-#        print("Введено некорректні дані. Будь ласка, введіть номер місяця вашого народження")
+birth_month = int(input ("Enter your birthday month: "))
+if birth_month == 1 or birth_month == 2 or birth_month == 12:
+    print("За вікном падав сніг")
+elif birth_month == 3 or birth_month == 4 or birth_month == 5:
+    print("Все довкола розцвітало")
+elif birth_month == 6 or birth_month == 7 or birth_month == 8:
+    print("Діти насолоджувались літніми канікулами")
+elif birth_month == 9 or birth_month == 10 or birth_month == 11:
+    print("Все довкола загоралось яскравими фарбами")
+else:
+    print("Введено некорректні дані. Будь ласка, введіть номер місяця вашого народження")
 
 
 # task 3
