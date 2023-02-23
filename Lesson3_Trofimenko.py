@@ -43,3 +43,20 @@ if number % 2 == 0 and sum_number % 3 == 0:
     print("Обране число ділиться на 6")
 else:
     print("Обране число не ділиться на 6")
+
+
+# task 4
+x = float(input("Enter x: "))
+y = float(input("Enter y: "))
+if x > 0 and y > 0:
+    print("I coordinate quarter")
+elif x == 0 and y == 0:
+    print( "the point is at start coordinate ")
+elif x == 0 or y == 0:
+    print ( "the point lies on the coordinate axis ")
+elif x < 0 and y > 0:
+    print("II coordinate quarter")
+elif x < 0 and y < 0:
+    print("III coordinate quarter")
+elif x > 0 and y < 0:
+    print("III coordinate quarter")
