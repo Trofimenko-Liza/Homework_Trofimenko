@@ -33,13 +33,14 @@ else:
 # task 3
 number = int(random.randrange(1000000))
 print(number)
+last_number = number % 10
 sum_number = 0
 while number > 0:
     digit = number % 10
     if digit != 0:
         sum_number += digit
     number = number // 10
-if number % 2 == 0 and sum_number % 3 == 0:
+if last_number % 2 == 0 and sum_number % 3 == 0:
     print("Обране число ділиться на 6")
 else:
     print("Обране число не ділиться на 6")
@@ -59,4 +60,4 @@ elif x < 0 and y > 0:
 elif x < 0 and y < 0:
     print("III coordinate quarter")
 elif x > 0 and y < 0:
-    print("III coordinate quarter")
+    print("IV coordinate quarter")
