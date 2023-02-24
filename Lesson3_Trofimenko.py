@@ -5,13 +5,13 @@ import random
 # task 1
 minute = int(random.randint(0, 59))
 print(minute)
-if minute >= 0 and minute < 15:
+if minute >= 0 and  minute < 15:
     print("It is first quarter of an hour")
-elif minute >= 15 and minute < 30:
+elif minute < 30:
     print("It is second quarter of an hour")
 elif minute >= 30 and minute < 45:
     print("It is third quarter of an hour")
-elif minute >=45 and minute < 60:
+else:
     print("It is fourth quarter of an hour")
 
 
