@@ -59,5 +59,5 @@ elif x < 0 and y > 0:
     print("II coordinate quarter")
 elif x < 0 and y < 0:
     print("III coordinate quarter")
-elif x > 0 and y < 0:
+else:
     print("IV coordinate quarter")
