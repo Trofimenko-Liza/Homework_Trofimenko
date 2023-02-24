@@ -16,7 +16,6 @@ else:
 
 
 # task 2
-#while True:
 birth_month = int(input ("Enter your birthday month: "))
 if birth_month == 1 or birth_month == 2 or birth_month == 12:
     print("За вікном падав сніг")
