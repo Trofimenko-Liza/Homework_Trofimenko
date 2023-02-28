@@ -20,6 +20,7 @@ for student in students_score.keys():
         if students_score[student] > avarage:
             print(student)
 
+
 # task 2
 user = {
     1: "Ivan",
@@ -29,8 +30,23 @@ user = {
 comand = int(input("Enter user id (1, 2, 3): "))
 print(f"Hello", {user.get(comand, "all")} )
 
+
 # task 3
 set_4 = {1, 2, 8, 3, 2, 1, 1, 0, 9, 2, 3, 3, 3, 3, 7, 5, 2, }
 print(len(set_4))
 
+
 # task 4
+set_5 = {0, 0, 1, 2, 1, 2, 5, 0}
+set_6 = {3, 4, 5, 6, 7, 8, 0, 9}
+set_7 = set_5 & set_6
+print(set_7)
+for element in set_7:
+    print(element)
+for element in set_5:
+    print(element)
+for element in set_6:
+    print(element)
+
+
+# task 5
