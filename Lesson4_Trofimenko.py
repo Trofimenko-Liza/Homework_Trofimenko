@@ -28,7 +28,7 @@ while comand == "add":
                 print(shortest)
                 comand = input("enter comand:")
 
-                if comand == "exit":
+        if comand == "exit":
                         exit = str
                         break
 
