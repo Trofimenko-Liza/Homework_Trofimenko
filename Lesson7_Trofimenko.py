@@ -1,4 +1,5 @@
-
+from functools import reduce
+import random
 # task 1
 a = float(input("Enter a: "))
 b = float(input("Enter b: "))
@@ -19,14 +20,32 @@ else:                                                               # опрац
 
 
 #task 2
-import random
 
 name = ["Anna", "Serhii", "Maxim", "Inna", "Maria", "Ivan", "Matvei", "Maya", "Makar", "Kirill"]
 domain = ["com", "net", "org", "ua", "biz", "info"]
+
 email_name = (random.choice(name))                                 # генерування випадкового ім'я
 email_domain = (random.choice(domain))                             # генерування випадкового домейну
 email_data = (str(random.randint(99,1000)))                        # генерування випадкового числа
 email_letter = [random.choice('abcdefghijklm') for i in range(7)]  # генерування набору випадкових літер
 email_letter2 = ''.join(email_letter)                              # приведення випадковіх літер до читабельного вигляду
+
 full_email = str(email_name +"." + email_data + "@" + email_letter2 +"." +  email_domain) # компанування всіх значень
 print(full_email)
+
+
+
+# extra task 2
+# почему не работает?
+is_digit = lambda x: True if (x == int) else False
+print(is_digit(10))
+
+
+
+# extra task 4
+
+from functools import reduce
+
+list_1 = [1, 2, 3, 4, 5, 6, 7 ,8, 9, 10, 11, 12, 13, 14, 15]
+sum = reduce(lambda x,y: x+y, list_1)
+print(sum)
