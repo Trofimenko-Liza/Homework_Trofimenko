@@ -35,17 +35,34 @@ print(full_email)
 
 
 
+# extra task 1
+# почему не работает?
+
+set_1 = {0, 7, 2, 3, 4, 4, 2, 5, 6, 1, 7}
+set_2 = {7, 9, 1, 4, 2, 5, 6, 1, 8, 9}
+set_3 = set_1 & set_2
+union = list(lambda x: x for x in set_3)
+print(list(union))
+
+
+
 # extra task 2
 # почему не работает?
+
 is_digit = lambda x: True if (x == int) else False
 print(is_digit(10))
 
+# extra task 3
+# почему не работает?
+
+list_3 = [[1, 2, 3], [4, 5,], [6, 7, 8, 9, 10], [11], [12, 13, 14, 15, 16]]
+short = [lambda x: (sorted(list_3, key=len)) for x in list_3]
+print(list(short))
 
 
 # extra task 4
 
 from functools import reduce
-
 list_1 = [1, 2, 3, 4, 5, 6, 7 ,8, 9, 10, 11, 12, 13, 14, 15]
 sum = reduce(lambda x,y: x+y, list_1)
 print(sum)
