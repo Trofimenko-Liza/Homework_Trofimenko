@@ -1,10 +1,12 @@
 import re
 
-
-result = re.search('^\w.*\w$', 'This is 4 a test homework 25647 5_')
+#task 1
+result = re.search('^\w.*\w$', 'This is a homework 25647_')
 print(result)
 
 
-#pattern = re.compile('\d')
-#result2 = pattern.split(['example (.com)', 'github (.com)', 'stackoverflow (.com)'])
+#task 2
+result = re.sub(r'\(|\)| ', '', '["example (.com)", "github (.com)", "stackoverflow (.com)"]')
+print(result)
+
 
