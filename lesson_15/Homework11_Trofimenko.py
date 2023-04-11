@@ -50,6 +50,8 @@ employee3 = Scrumcompany('Bogdana', 'Urchenko', 'Kyiv', 'HR', 3)
 new_employee = Scrumcompany('Natalia', 'Butsko', 'Designer')
 
 print(employee1.first_name, employee1.last_name, employee1.title)
+print(employee2.first_name, employee2.last_name)
+print(employee3.title, employee3.city)
 print(new_employee.last_name)
 
 
