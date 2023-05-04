@@ -43,11 +43,3 @@ new_list.append(['Alex', 'Shevchenko', 25, 'Java'])
 with open("convert.csv", 'w', newline="") as csv_file2:
     csv_edit = csv.writer(csv_file2, delimiter=',')
     csv_edit.writerows(new_list)
-
-
-
-
-
-
-
-
