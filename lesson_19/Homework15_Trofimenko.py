@@ -21,7 +21,7 @@ class Chinachild:
 child1 = Chinachild('Lian', 'girl')
 child2 = Chinachild('Nguan', 'boy')
 print()
-
+del child2
 
 # task 2
 
