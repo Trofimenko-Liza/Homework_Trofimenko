@@ -1,3 +1,29 @@
+# task 1
+class Chinachild:
+    def __init__(self, name:str, gender:str):
+        def inner(*args):
+            print()
+        return inner
+
+def singleton(_class):
+    def inner(*args):
+        if not hasattr(_class, 'instance'):
+            setattr(_class, 'instance', _class(*args))
+        return getattr(_class, 'instance')
+    return inner
+
+@singleton
+class Chinachild:
+        def __init__(self, name: str, gender: str):
+            self.__name = name
+            self.__gender = gender
+
+child1 = Chinachild('Lian', 'girl')
+child2 = Chinachild('Nguan', 'boy')
+print()
+
+
+# task 2
 
 from abc import ABC, abstractmethod
 
