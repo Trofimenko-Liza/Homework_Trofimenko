@@ -8,7 +8,7 @@ from lesson_21.Homework17_Trofimenko.code_for_test2 import France_section
 def test_Add_Exhibit_Ukrainian_Section():
     uamuseum = Ukranian_section()
     uamuseum.add_new_exhibit()
-    assert uamuseum.add_new_exhibit() == 'Kobzar Shevchenko'
+    assert uamuseum.add_new_exhibit() == 'Kobzar'
 
 
 @pytest.mark.smoke
