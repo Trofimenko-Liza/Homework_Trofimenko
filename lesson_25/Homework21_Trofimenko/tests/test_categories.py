@@ -12,4 +12,11 @@ def test_check_login(dashboard):
     login.fill_row('elizzar1987@gmail.com', 'liza1987')
     time.sleep(5)
 
+def test_get_cookies(cookies, driver):
+    our_cookies = cookies.get_cookies(driver)
+    print(our_cookies)
+    time.sleep(5)
 
+def test_set_local_storage(local_storage, driver):
+    setting_local_storage = local_storage.set_local_storage(driver)
+    print(driver.execute_script("return window.localStorage['test']; "))

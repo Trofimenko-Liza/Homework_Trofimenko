@@ -1,7 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from lesson_25.Homework21_Trofimenko.core.locator import Locator
-
+from selenium.webdriver import Chrome
 
 class HomePage:
     def __init__(self, driver):
@@ -15,3 +15,4 @@ class HomePage:
 
     def _click(self, locator: Locator):
         self._wait_until_element_appears(locator).click()
+
