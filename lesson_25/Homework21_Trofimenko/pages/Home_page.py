@@ -16,3 +16,14 @@ class HomePage:
     def _click(self, locator: Locator):
         self._wait_until_element_appears(locator).click()
 
+class CookiesLocalStorage():
+    def __init__(self):
+        self._driver = None
+
+    def get_cookies(self, driver):
+        self._driver = driver
+        return driver.get_cookies()
+
+    def set_local_storage(self, driver):
+        self._driver = driver
+        return driver.execute_script("window.localStorage['test'] = 'Liza_Test_value'")
